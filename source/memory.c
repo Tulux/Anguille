@@ -293,8 +293,8 @@ void print_usage()
     printf("Program mode must be specified using either -i or -s option!");
     printf("\n");
     printf("Example:\n");
-    printf("Server: anguille -v -r 4500:4600 -p MY_PASS_123 -m 9870 -s\n");
-    printf("Client: anguille -v -r 6200:6300 -p MY_PASS_123 -m 9870 -i 10.10.10.10\n");
+    printf("Server: anguille -v 1 -r 4500:4600 -p MY_PASS_123 -m 9870 -s\n");
+    printf("Client: anguille -v 1 -r 6200:6300 -p MY_PASS_123 -m 9870 -i 178.175.135.122\n");
 }
 
 void init_args(Args* args)
