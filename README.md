@@ -44,20 +44,20 @@ On server side, some ports must be opened:
 Example
 -------
 
-1) Configure server
-TCP/9870 opened
+1) Configure server\s\s
+TCP/9870 opened\s\s
 UDP/4500 to UDP/4600 opened
 
-2) Run this command on the server
+2) Run this command on the server\s\s
 `./anguille -v 1 -r 4500:4600 -t 22 -p MY_PASS_123 -m 9870 -s`
 
-3) Configure client
+3) Configure client\s\s
 Be sure that UDP/6200 to UDP/6300 are not used (bound) by anything else. If you don't have any particular services, theses ports should be free.
 
-4) Run this command on the client
+4) Run this command on the client\s\s
 `./anguille -v 1 -r 6200:6300 -t 1234 -p MY_PASS_123 -m 9870 -i SERVER_IP`
 
-5) On client side, TCP traffic to TCP/1234 will be translated to the server on TCP/22
-You can test it by running this command:
-`ssh -p 1234 127.0.0.1`
+5) On client side, TCP traffic to TCP/1234 will be translated to the server on TCP/22.\s\s
+You can test it by running this command:\s\s
+`ssh -p 1234 127.0.0.1`\s\s
 You get a server shell.
